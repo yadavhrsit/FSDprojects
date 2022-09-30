@@ -1,0 +1,30 @@
+<restaurants>
+    <restaurant name="Yellow Chilli" 
+    address="New Delhi" 
+    lat="11.856440"
+    lng="-157.354321"
+    type="sitdown"/>
+    
+
+    <restaurant name="China Town" 
+    address="Kolkata" 
+    lat="47.608940"
+    lng="-112.616541"
+    type="sitdown"/>
+    
+
+    <restaurant name="Molecule" 
+    address="Lucknow" 
+    lat="22.564164"
+    lng="-122.340141"
+    type="bar"/>
+    
+
+    <restaurant name="Foodies Planet" 
+    address="Kolkata" 
+    lat="47.46267"
+    lng="-129.37741"
+    type="sitdown"/>
+    
+
+</restaurants>
