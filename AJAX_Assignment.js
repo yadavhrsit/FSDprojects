@@ -29,11 +29,11 @@ function restrauntsdata() {
             var list ="<ul style=color:DodgerBlue;>";
         }
         
-         list += "<li>" + attrMap[i].getNamedItem("name").value + "</li>";
+         list += "<li>" + attrMap[i].getNamedItem("name").value + "</li> ";
          list += "<li>" + attrMap[i].getNamedItem("address").value + "</li>";
          list += "</ul>";
          
-         document.getElementById("demo").innerHTML += list;
+         document.getElementById("container").innerHTML += list;
        }
         
       
