@@ -1,3 +1,5 @@
+// JS File for AJAX Assignment Question 1
+
 function restrauntsdata() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
