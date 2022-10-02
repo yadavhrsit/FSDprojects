@@ -1,36 +1,46 @@
-// $.ajax({
-//     method: 'GET',
-//     url: 'https://api.api-ninjas.com/v1/country?name=United States',
-//     headers: { 'X-Api-Key': '9adG7iI1x/NcPOu2COMoiw==LcQX2Uj1SdzYFQ9Y'},
-//     contentType: 'application/json',
-//     success: function(result) {
-//         console.log(result[0].population);
-//         console.log(result[0].name);
-//     },
-//     error: function ajaxError(jqXHR) {
-//         console.error('Error: ', jqXHR.responseText);
-//     }
-// });
+var inputs = [];
 
-function getCountryPopulation() {
+function search(){
+  var searchQuery = document.getElementById("userInput").value;
+  if(typeof searchQuery === 'string' && searchQuery.length === 0){
+    alert("Please enter a country");
+  }
+  else{
+    document.getElementById("resultArea").innerText="Getting Population Data";
+    getCountryPopulation(searchQuery);
+  }
+}
+
+function getCountryPopulation(searchQuery) {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
-      }
-    };
-    xhttp.open("GET", "https://api.api-ninjas.com/v1/country?name=United States", true);
+    let searchReq="https://api.api-ninjas.com/v1/country?name="+searchQuery;
+    console.log(searchReq);
+    xhttp.open("GET", searchReq,true);
     xhttp.setRequestHeader('X-Api-Key', '9adG7iI1x/NcPOu2COMoiw==LcQX2Uj1SdzYFQ9Y');
     xhttp.responseType="json";
+    xhttp.onload = function (){
+      if (this.status === 200) {
+        myFunction(this);
+      }
+
+    }
     xhttp.send();
   }
 
   
   function myFunction(jsonObj) {
     var result = jsonObj.response;
-    console.log(result[0].name);
-    console.log(result[0].population);
+    if(result[0]==null){
+      alert("Invalid Country Name");
+      document.getElementById("resultArea").innerText="";
+    }
+    else{
+    var countryName=result[0].name;
+    var population = result[0].population;
+    inputs.push({"countryName":countryName,"population":population});
+    document.getElementById("resultArea").innerText=countryName+" has "+population*1000+" people";
+    }
+  } 
 
-    } 
 
-    getCountryPopulation();
+  
