@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+*{
+    color: bisque;
+}
+
+#top{
+    min-height: 100vh;
+}
+h3{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+.container-fluid {
+    min-height: fit-content;
+    border: 2px solid salmon;
+}
