@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+
+header {
+    height: 8vh;
+    width: 100%;
+    background-color: #b22144;
+}
+header nav {
+    height: 100%;
+    width: 100%;
+    
+}
+header nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-basis: 100%;
+    
+    /* padding-right: 1rem; */
+}
+header nav ul li {
+    height: 100%;
+    padding-left:1rem;
+    padding-right:1rem;
+    display: flex; 
+    justify-content: center; 
+    text-align:center; 
+    align-items: center; 
+    margin-right: 2%;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+header nav ul li:hover {
+    background-color: #47557b;
+    
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* About section styling below */
+
+.about {
+    height: 100%;
+    width: 100%;
+    background-color: #333339;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 10vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h4{
+    
+    
+}
+/* End */
+
+/* Project section styling below */
+
+.projects {
+    height: 200vh;
+    width: 100%; 
+    padding-top: 6vh;
+    background: #47557b;
+}
+
+.projects h2{
+    color:white;
+    text-align: center;
+    text-decoration:underline;
+    text-underline-offset: 2vh;
+    font-size: 6vh;
+    margin-bottom: 1vh;
+}
+
+.projects-container{
+    height: 80%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.project-box{
+    height:50%;
+    width: 30%;
+    margin-top: 4%;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .project-box{
+        height: 30%;
+        width: 48%;
+        
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .project-box{
+        height: 30%;
+        width: 48%;
+        
+    }
+
+    .button button{
+        font-size: 60%;
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .project-box{
+        height: 16%;
+        width: 100%;
+    }
+    /* .projects-container{ */
+        /* height: 80%; */
+    /* } */
+    
+}
+ 
+@media all and (max-width: 480px) {
+    .project-box{
+        height: 30%;
+        width: 100%;
+    }
+    .projects-container{
+        height: 44%;
+    }
+
+ }
+
+.project-box-img{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(223, 82, 82);
+    
+}
+.project-box-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: 3em sans-serif;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(57, 116, 245);
+}
+
+.project-box-title p::before{
+    content: "< ";
+    display: none;
+}
+.project-box-title p::after{
+    content: " />";
+    display: none;
+}
+
+.project-box-title p:hover::after{
+    display: inline;
+}
+.project-box-title p:hover::before{
+    display: inline;
+}
+
+.button {
+    margin-top: 1%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button button {
+    height: 4vmax;
+    width: 10vmax;
+    font-size: 80%;
+    color: white;
+    background: grey;
+    border: none;
+}
+.button button:hover {
+    background: #b22144;
+    border: none;
+}
+
+/* End */
+
+
+
+/* footer section styling */
+.footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: #303841;
+    height: 60vh;
+    width: 100%;
+}
+.footer ul {
+    margin-top: 3%;
+    width: 30%;
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.footer ul li {
+    cursor: pointer;
+}
+.footer ul li:hover {
+    transition: transform;
+    transform: translateY(10px);
+}
