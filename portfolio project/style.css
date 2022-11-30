@@ -155,35 +155,30 @@ main{
 .project-box-img{
     height: 90%;
     width: 100%;
-    background-color: rgb(223, 82, 82);
+    background-color: rgb(192, 115, 115);
     
 }
 .project-box-title{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
     font-size: 3em ;
     height: 10%;
     width: 100%;
     background-color: rgb(57, 116, 245);
+    z-index: 0;
+    
+}
+code:first-of-type {
+    color: red;
+   
+}
+code:last-of-type {
+    color: rgb(33, 235, 94);
+   
 }
 
-.project-box-title p::before{
-    content: "< ";
-    display: none;
-}
-.project-box-title p::after{
-    content: " />";
-    display: none;
-}
-
-.project-box-title p:hover::after{
-    display: inline;
-}
-.project-box-title p:hover::before{
-    display: inline;
-}
 
 .button {
     margin-top: 1%;
