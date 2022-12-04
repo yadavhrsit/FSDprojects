@@ -108,7 +108,7 @@ header{
 }
 
 .minimize-it{
-    transition: transform;
+
     transform-origin: top;
     transform: scaleY(0);
 }
