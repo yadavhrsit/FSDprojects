@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    text-decoration: none
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.blue{
+    background-color: #17177e;
+}
+.red{
+    background-color: #c4161c;
+}
+.blue-text{
+    color: #17177e;
+}
+.red-text{
+    color: #c4161c;
+}
+
+/* .hidden{ */
+    /* display: none; */
+/* } */
+
+/* navbar design */
+
+.navbar {
+    height: 64px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.logos-container{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url(./img/Ecom-express_logo.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 150px;
+}
+.gptw{
+    background-image: url(./img/GPTW.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50px;
+}
+.navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 450; 
+}
+.menu-items a{
+    color: black;
+}
+.menu-items-side a{
+    border-radius: 8px;
+    padding: 5px 12px;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+/* about section styling */
+#about-section{
+    height: 100vh;
+    width: 100%;
+}
+
+.about{
+    background-image: url(./img/bg.jpg);
+    background-position:left;
+    background-size: contain;
+    background-repeat: repeat;
+    height: 90%;
+    width: 100%;
+    border-bottom: 6px dashed rgb(48, 46, 46);
+    border-radius: 0% 0% 100% 30%;
+    position: relative;
+    opacity: 20%;
+}
+
+.about-text{
+    position: absolute;
+    top:30%;
+    left:5%;
+    
+}
+.about-text h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.about-text h3 {
+    font-size: 26px;
+    color: black;
+    font-weight: 400;
+}
+
+.about-img{
+    position: absolute;
+    top:32%;
+    left:50%;
+    height: 500px;
+    width: 500px;
+    background-image: url(./img/about-us-infographic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* about ecom express styling */
+
+#about-Ecom{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.about-Ecom-img{
+    height: 50%;
+    width: 40%;
+    background-image: url(./img/aboutus-info.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+.about-Ecom-text{
+    height: 50%;
+    width: 50%;
+    margin-top: 15px;
+}
+.about-Ecom-text span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.about-Ecom-text p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* vison-values section styling */
+#vison-values{
+    height: 100vh;
+    
+}
+.vision-values-text{
+    height: 18%;
+    width: 100%;
+    text-align: center;
+}
+.vision-values-text span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.vision-values-text p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.vision-values-cards-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vision-values-card{
+    height: 100%;
+    width: 19.5%;
+    background-color: #00000041;
+}
+.vision-values-card .hidden{
+    display: none;
+}
+.vision-values-card:hover .hidden{
+    display: block;
+}
+.card1,.card2,.card3,.card4,.card5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 0px 12px 10px;
+    position: relative;
+}
+
+.card1 h1,.card2 h1,.card3 h1,.card4 h1,.card5 h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+.card1 p,.card2 p,.card3 p,.card4 p,.card5 p {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+.card1{
+    background-image: url(./img/integrity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card2{
+    background-image: url(./img/commitment.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3{
+    background-image: url(./img/Openness.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card4{
+    background-image: url(./img/Respect.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card5{
+    background-image: url(./img/passion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.darker{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+}
+.card{
+    position: absolute;
+}
