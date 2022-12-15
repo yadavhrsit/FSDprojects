@@ -30,10 +30,15 @@ a{
 .red-text{
     color: #c4161c;
 }
+.active{
+    color: white !important;
+    background-color: #c4161c !important;
+    border: none !important;
+}
 
-/* .hidden{ */
-    /* display: none; */
-/* } */
+.hidden{
+    display: none;
+}
 
 /* navbar design */
 
@@ -264,4 +269,222 @@ a{
 }
 .card{
     position: absolute;
+}
+
+/* team section styling */
+.leadership-team-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.leadership-team-text span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.gallery-buttons{
+    margin-top: 35px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 450; 
+    margin-left: auto;
+}
+
+.gallery-buttons li{
+    display: inline;
+}
+.gallery-buttons button{
+    border-radius: 25px;
+    padding: 16px 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.members-section1,.members-section2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+.member{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.member-img{
+    height: 70%;
+    width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+.member-info{
+    margin-top: 10px;
+}
+.member-info h1{
+    font-weight: 500;
+}
+.member1{
+    background-image: url(./img/T.A.Krishnan-180x180.jpg);
+}
+.member2{
+    background-image: url(./img/K-Satyanarayana-180x180.jpg);
+}
+.member3{
+    background-image: url(./img/Manju-Dhawan-180x180.jpg);
+}
+.member4{
+    background-image: url(./img/Sanjeev-Saxena-180x180.jpg);
+}
+.member5{
+    background-image: url(./img/Viraj-Sawhney-180x180.jpg);
+}
+.member6{
+    background-image: url(./img/Himanshu-Nema-180x180.jpg);
+}
+.member7{
+    background-image: url(./img/Rajiv-Kapoor-180x180.jpg);
+}
+.member8{
+    background-image: url(./img/Girish-Lakshman-180x180.jpg);
+}
+.member9{
+    background-image: url(./img/V-Anantharaman-180x180.jpg);
+}
+.member10{
+    background-image: url(./img/Rohit-Anand-180x180.jpg);
+}
+.member11{
+    background-image: url(./img/Manas-1-180x180.jpg);
+}
+.member12{
+    background-image: url(./img/Vageesh-1-180x180.jpg);
+}
+.member13{
+    background-image: url(./img/Kalpana-Iyer-180x180.jpg);
+}
+.member14{
+    background-image: url(./img/Vishwachetan-Nadamani-180x180.jpg);
+}
+.member15{
+    background-image: url(./img/Vipul-Agarwal-180x180.jpg);
+}
+.member16{
+    background-image: url(./img/Ashish-Sikka-180x180.jpg);
+}
+.member17{
+    background-image: url(./img/Amit-180x180.jpg);
+}
+.member18{
+    background-image: url(./img/Dipanjan-Banerjee-180x180.jpg);
+}
+.member19{
+    background-image: url(./img/Lakshmanan-S-180x180.jpg);
+}
+.member20{
+    background-image: url(./img/Prashant-180x180.jpg);
+}
+.member21{
+    background-image: url(./img/Rahul-Tandon-180x180.jpg);
+}
+.member22{
+    background-image: url(./img/Sonam-Paliwal-180x180.jpg);
+}
+.member23{
+    background-image: url(./img/Manuj-Khurana-180x180.jpg);
+}
+
+/* Corporate Social Responsibility styling */
+
+#social-responsibility {
+    margin-top: 12rem;
+}
+#social-responsibility h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.drives-container{
+    display: flex;
+}
+
+.drives-heading{
+    width: 40%;
+   position: relative;
+}
+.bg-img{
+    background-image: url(./img/globe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    opacity: 0.3;
+    padding: 0%;
+}
+.drives-heading ul{
+    margin: 10% 1% 1% 10%;
+}
+.drives-heading ul li{
+    width: max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    cursor: pointer;
+}
+.drives-data{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 2% 4% 2%;
+    background-color: #f8f8f8;
+}
+.drives-data-text{
+    font-size: 16px;
+    font-weight: 300;
+}
+.drives-data-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.drives-data-images-img{
+    height: 120px;
+    width: 130px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 2% 0.5% 1% 0.5%;
+}
+
+/* awards section styling */
+#awards{
+    margin-top: 8%;
+    text-align: center;
+}
+#awards h1{
+    display: inline;
+    font-size: 32px;
+    font-weight: 600;
+}
+.awards-slider-container{
+
+}
+
+.hidden{
+    display: none;
 }
