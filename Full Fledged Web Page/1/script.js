@@ -19,3 +19,17 @@ galleryButtons[1].addEventListener("click", function () {
     document.querySelector(".members-section1").classList.add("hidden");
   }
 });
+
+// code for our swiper in awards section
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

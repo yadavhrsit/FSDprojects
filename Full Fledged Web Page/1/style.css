@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --swiper-navigation-size: 30px;
+}
 *,
 *::after,
 *::before{
@@ -12,6 +15,9 @@ html{
 }
 a{
     text-decoration: none
+}
+section{
+    background-color: #f7f7f7;
 }
 .container{
     max-width: 1200px;
@@ -475,16 +481,189 @@ a{
 #awards{
     margin-top: 8%;
     text-align: center;
+    height: 75vh;
 }
 #awards h1{
     display: inline;
     font-size: 32px;
     font-weight: 600;
 }
-.awards-slider-container{
-
+.awards-swiper-container{
+    position: relative;
+    height: 100%;
+}
+.awards-bg{
+    position: absolute;
+    background-image: url(./img/trophy-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    padding: 0%;
 }
 
+  .swiper {
+    width: 70%;
+    height: 100%;
+    position: static;
+    padding-top: 30px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 5%;
+    padding: 10px;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .swiper-pagination-bullets{
+    display: none;
+  }
+  .swiper-wrapper{
+    position: static;
+    height: 60%;
+    margin-top: 20px;
+  }
+  .swiper-button-prev,.swiper-button-next{
+    color: black;
+    font-weight: 900 !important;
+    opacity: 1 !important;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    height: 45px !important;
+    width: 45px !important;
+    top: 45% !important;
+    
+  }
+  .swiper-button-prev{
+    left: 8%;
+  }
+  .swiper-button-next{
+    right: 8%;
+  }
+
+
+#footer{
+    height: 80vh;
+}
+.footer-container{
+    height: 90%;
+    width: 100%;
+}
+.first-container{
+    display: flex;
+    height: 20%;
+    width: 75%;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+.logo-container{
+    height: 80%;
+    width: 20%;
+    background-image: url(./img/Ecom-express_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.connect-container{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    border: 2px solid #e0e0e0;
+    border-radius: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.connect-container h1{
+    font-size: 24px;
+    color: #17177e;
+}
+.connect-container ul li{
+    cursor: pointer;
+    height: 70%;
+    width: 200px;
+    background-color: #c4161c;
+    border: 5px solid white;
+    color: white;
+    outline: 1px solid red;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.links-container{
+    width: 75%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 50px 100px;
+}
+table{
+display: flex;
+font-size: 14px;
+}
+tr{
+    display: inline;
+}
+
+th{
+display: block;
+text-align: left;
+margin-top: 20px;
+font-size: 20px;
+}
+td{
+display: block;
+cursor: pointer;
+width: max-content;
+margin-top: 6px;
+}
+
+.social-container{
+    height: 10%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.social-container p{
+    font-size: 14px;
+}
+.social-container i{
+    font-size: 32px;
+    margin-left: 20px;
+}
 .hidden{
     display: none;
 }
