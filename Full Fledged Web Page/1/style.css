@@ -94,7 +94,7 @@ section{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 49%;
     font-size: 16px;
     font-weight: 450; 
 }
@@ -124,7 +124,6 @@ section{
 .line1{
     transition: all 500ms ease-in-out;
     transform-origin: left;
-    
 }
 .line2{
     transition: all 500ms ease-in-out;
@@ -176,8 +175,8 @@ section{
     }
 
     .hamburger{
+        order: 2;
         display: flex;
-        
     }
     .open.line1{
         transition: all 500ms ease-in-out;
