@@ -1,3 +1,12 @@
+// code for hamburger lines
+document.getElementById("hamburger").addEventListener("click", function () {
+  let navbar = document.getElementsByClassName("menu-items")[0];
+  navbar.classList.toggle("opened");
+  document.getElementsByClassName("lines")[0].classList.toggle("open");
+  document.getElementsByClassName("lines")[1].classList.toggle("open");
+  document.getElementsByClassName("lines")[2].classList.toggle("open");
+});
+
 var galleryButtons = document.querySelectorAll(".gallery-btn");
 
 galleryButtons[0].addEventListener("click", function () {

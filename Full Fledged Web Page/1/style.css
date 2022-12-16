@@ -110,7 +110,7 @@ section{
 
 .hamburger{
     height:60%;
-    width:10%;
+    width:12%;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ section{
 }
 .line2{
     transition: all 500ms ease-in-out;
-    transform-origin: left;
+    transform-origin: right;
 }
 .line3{
     transition: all 500ms ease-in-out;
@@ -138,6 +138,7 @@ section{
     .navbar{
         width: 100%;
         justify-content: space-evenly;
+        position: relative;
     }
     .logos-container{
         width: 30%;
@@ -163,7 +164,23 @@ section{
         justify-content: space-evenly;
     }
     .menu-items {
-        display: none;
+        margin-top: 64px;
+        height: calc(100vh - 64px);
+        width: max-content;
+        position: absolute;
+        left: 65%;
+        top: 0%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 13%;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #c4161cbe;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(100%);
+    }
+    .menu-items a{
+        color: #ffffff;
     }
     .menu-items-side {
         width: 80% !important;
@@ -939,4 +956,9 @@ td{
 
 .hidden{
     display: none;
+}
+.opened{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-0%);
 }
