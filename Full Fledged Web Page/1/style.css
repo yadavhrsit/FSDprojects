@@ -93,7 +93,7 @@ section{
 .menu{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 50%;
     font-size: 16px;
     font-weight: 450; 
@@ -110,16 +110,17 @@ section{
 /* PHONE PORTRAIT VERSION */
 @media only screen and (min-width: 320px) and (orientation: portrait) {
     .navbar{
-        display: none;
+        width: 100%;
+        justify-content: space-evenly;
     }
     .logos-container{
-        width: 38%;
+        width: 30%;
         display: flex;
         justify-content: space-between;
     }
     .logo{
         height: 100%;
-        width: 150px;
+        width: 60%;
     }
     .gptw{
         background-image: url(./img/GPTW.png);
@@ -127,27 +128,25 @@ section{
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
-        width: 50px;
+        width: 30%;
     }
     .navbar-container{
-        width: 58%;
+        width: 70%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-    
     .menu-items {
         display: none;
     }
     .menu-items-side {
-        width: 80%;
-        justify-content: flex-start;
+        width: 80% !important;
+        justify-content: space-evenly;
     }
     .menu-items-side a{
         height: 100%;
-        width: 30%;
         font-size: 10px;
-        padding: 2px;
+        padding: 6px 6px 6px 6px;
     }
   }
 
@@ -802,8 +801,7 @@ section{
     }
     .logo-container{
         height: 100px;
-        width: 100%;
-        margin-left: 50%;
+        width: 50%;
     }
     .connect-container{
         height: 100%;
