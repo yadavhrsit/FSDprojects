@@ -168,7 +168,8 @@ section{
         height: calc(100vh - 64px);
         width: max-content;
         position: absolute;
-        left: 65%;
+        left: 68%;
+        right: 0%;
         top: 0%;
         flex-direction: column;
         justify-content: flex-start;
@@ -177,15 +178,21 @@ section{
         padding-right: 15px;
         background-color: #c4161cbe;
         transition: all 0.5s ease-in-out;
-        transform: translateX(100%);
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    .menu-items li{
+        padding-top: 20px;
     }
     .menu-items a{
         color: #ffffff;
+        cursor: pointer;
     }
     .menu-items-side {
         width: 80% !important;
         justify-content: space-evenly;
     }
+    
     .menu-items-side a{
         font-size: 8px;
         padding: 6px 6px 6px 6px;
@@ -960,5 +967,6 @@ td{
 .opened{
     display: flex;
     transition: all 0.5s ease-in-out;
-    transform: translateX(-0%);
+    transform-origin: right;
+    transform: scaleX(1);
 }
