@@ -61,8 +61,8 @@ app.post("/product", (req, res) => {
     var product = {
       id: Data.length + 1,
       name: req.body.name,
-      total_quantity: req.body.price,
-      type_of_product: req.body.price,
+      total_quantity: req.body.total_quantity,
+      type_of_product: req.body.type_of_product,
       price: req.body.price,
     };
     //push our new product into the Data array
@@ -75,9 +75,9 @@ app.post("/product", (req, res) => {
 function validateproduct(product) {
   const schema = Joi.object({
     name: Joi.string().min(3).max(50).required(),
-    total_quantity: Joi.integer().min(1).required(),
+    total_quantity: Joi.number().min(1).required(),
     type_of_product: Joi.string().min(3).max(15).required(),
-    price: Joi.integer().min(1).required(),
+    price: Joi.number().min(1).required(),
   });
 
   try {
